@@ -1,10 +1,10 @@
 # SkillCraftTechnology-WebDev-Task2
-#🚀 Web Development Intern | Task 2 Completed at SkillCraft Technology 🚀
+##🚀 Web Development Intern | Task 2 Completed at SkillCraft Technology 🚀
 
 I'm excited to share the second task of my internship journey at SkillCraft Technology!
 In this task, I designed and developed an interactive and user-friendly Stopwatch Web Application ⏱️ using HTML, CSS, and JavaScript.
 
-#✨ Key Features:
+✨ Key Features:
 
 -> Start, pause, and reset functionality
 
