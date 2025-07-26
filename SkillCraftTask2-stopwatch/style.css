@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  background: url('https://png.pngtree.com/background/20250210/original/pngtree-detailed-look-at-a-professional-athletic-stopwatch-resting-picture-image_16257937.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+  margin-left: 16cm;
+}
+
+.stopwatch-container {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 25px;
+  padding: 40px 30px;
+  width: 370px;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #ffffffee;
+}
+
+.time-display {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.controls button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.controls button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.controls button:nth-child(1) { background-color: #28a745; } /* Start - Green */
+.controls button:nth-child(2) { background-color: #dc3545; } /* Pause - Red */
+.controls button:nth-child(3) { background-color: #007bff; } /* Reset - Blue */
+.controls button:nth-child(4) { background-color: #ffc107; color: #000; } /* Lap - Yellow */
+
+.laps {
+  list-style: decimal-leading-zero;
+  max-height: 150px;
+  overflow-y: auto;
+  padding-left: 20px;
+  text-align: left;
+  color: #ffffffcc;
+  scrollbar-width: thin;
+}
+
+.laps::-webkit-scrollbar {
+  width: 6px;
+}
+
+.laps::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+.laps li {
+  margin-bottom: 6px;
+  padding-bottom: 5px;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+}
